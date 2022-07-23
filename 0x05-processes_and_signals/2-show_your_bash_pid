@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-#Displays lines containing bash
-## shellcheck disable=SC2009
+# displays lines containing the bash word,
+# shellcheck disable=SC2009
 
-ps -uaxf | grep "bash"
+ps -a ux | grep bash
+
