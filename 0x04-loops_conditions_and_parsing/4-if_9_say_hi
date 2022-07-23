@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
-# This script prints "Best school" 10 times, and "hi" on the 9th iteration
-n=1
-
-while [ $n -le 10 ]
+#This script is displaying "Holberton School" 10 times and hi once
+i="0"
+while ((i < 10));
 do
-    echo "Best School"
-    if [ $n -eq 9 ]
-    then
-        echo "Hi"
-    fi
-    n=$(( n + 1 ))
+    echo "Best School";
+    if [ "$i" -eq 8 ]; then
+	echo "Hi";
+	fi
+    ((i++));
 done

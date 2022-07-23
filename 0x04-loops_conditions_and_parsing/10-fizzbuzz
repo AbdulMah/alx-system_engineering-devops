@@ -1,20 +1,16 @@
 #!/usr/bin/env bash
-# This script is used for FizzBuzz game
-n=1
+# FizzBuzz - print 1 to 100, "Fizz" for multiples of 3,
+# "Buzz" for multiples of 5, and "FizzBuzz" for multiples of 3 and 5
 
-while [ $n -le 100 ]
+for ((i=1; i < 101; i++))
 do
-    if [ $(( n % 3 )) -eq 0 -a $(( n % 5 )) -eq 0 ]
-    then
-        echo "FizzBuzz"
-    elif [ $(( n % 3 )) -eq 0 ]
-    then
-        echo "Fizz"
-    elif [ $(( n % 5 )) -eq 0 ]
-    then
-        echo "Buzz"
+    if ((i%3==0 && i%5==0)); then
+	echo "FizzBuzz"
+    elif((i % 3 == 0)); then
+	echo "Fizz"
+    elif ((i % 5 == 0)); then
+	echo "Buzz"
     else
-        echo $n
+	echo "$i"
     fi
-    n=$(( n + 1 ))
 done

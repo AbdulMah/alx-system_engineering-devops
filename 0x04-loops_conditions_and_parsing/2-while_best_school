@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# This script prints "Best school" 10 times
-n=1
-
-while [ $n -le 10 ]
+#This script is displaying "Holberton School" 10 times
+i="0"
+while ((i < 10));
 do
-    echo "Best School"
-    n=$(( n + 1 ))
+    echo "Best School";
+    ((i++));
 done
