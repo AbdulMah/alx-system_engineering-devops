@@ -1,7 +1,6 @@
-# SSH Config File
-#
-Host web-01
-	Hostname 18.207.237.104
+#!/usr/bin/env bash
+Host 16560-web-01
+	Hostname 44.200.81.74
 	User ubuntu
 	PasswordAuthentication no
 	IdentityFile ~/.ssh/school
