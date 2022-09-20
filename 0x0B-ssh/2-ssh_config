@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 Host 16560-web-01
-	Hostname 44.200.81.74
+	Hostname 18.207.159.189
 	User ubuntu
 	PasswordAuthentication no
 	IdentityFile ~/.ssh/school
