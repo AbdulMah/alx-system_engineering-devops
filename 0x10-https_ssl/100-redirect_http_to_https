@@ -10,7 +10,7 @@ defaults
 	timeout client  30s
 	timeout server  30s
 
-frontend th3gr00t-tech-frontend
+frontend amaa-tech-frontend
 	bind *:80
 	bind *:443 ssl crt /etc/haproxy/certs/amaa.tech.pem
 	http-request redirect scheme https code 301 unless { ssl_fc }

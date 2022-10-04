@@ -10,14 +10,14 @@ defaults
 	timeout client  30s
 	timeout server  30s
 
-frontend th3gr00t-tech-frontend
+frontend amaa-tech-frontend
 	bind *:80
 	bind *:443 ssl crt /etc/haproxy/certs/amaa.tech.pem
 	http-request redirect scheme https unless { ssl_fc }
 	http-request set-header X-Forwarded-Proto https
 	default_backend amaa-tech-backend
 
-backend th3gr00t-tech-backend
+backend amaa-tech-backend
 	balance roundrobin
 	server 16560-web-01 44.192.71.76:80 check
     server 16560-web-01 44.200.184.239:80 check
