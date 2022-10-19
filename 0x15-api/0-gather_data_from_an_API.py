@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 """
 Module 0-gather_data_from_an_API
-Using "https://jsonplaceholder.typicode.com/"s
+Using https://jsonplaceholder.typicode.com/
 """
+
 import requests
 from sys import argv
 
 
 def gather_data():
-    """Fetches data of employees and their todo tasks"""
-    
+    """Fetches data of employees
+        and their todo tasks
+    """
+
     users_url = "https://jsonplaceholder.typicode.com/users"
     users = requests.get(users_url)
     EMPLOYEE_NAME = ""
