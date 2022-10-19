@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 """
 Module 2-export_to_JSON
-Using "https://jsonplaceholder.typicode.com/"
+Using https://jsonplaceholder.typicode.com/
 """
+
 import json
 import requests
 from sys import argv
 
 
 def gather_data_to_json():
-    """Fetches data of employees and their todo tasks"""
+    """Fetches data of employees
+        and their todo tasks
+    """
     
     users_url = "https://jsonplaceholder.typicode.com/users"
     users = requests.get(users_url)
