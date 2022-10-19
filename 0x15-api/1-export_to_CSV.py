@@ -4,9 +4,9 @@ Module 0-gather_data_from_an_API
 Using https://jsonplaceholder.typicode.com/
 """
 
+from sys import argv
 import csv
 import requests
-from sys import argv
 
 
 def gather_data_to_csv():
